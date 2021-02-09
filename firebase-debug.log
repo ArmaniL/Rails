@@ -1,0 +1,72 @@
+[debug] [2021-02-09T03:41:25.633Z] ----------------------------------------------------------------------
+[debug] [2021-02-09T03:41:25.635Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\arman\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2021-02-09T03:41:25.635Z] CLI Version:   9.3.0
+[debug] [2021-02-09T03:41:25.635Z] Platform:      win32
+[debug] [2021-02-09T03:41:25.635Z] Node Version:  v12.14.1
+[debug] [2021-02-09T03:41:25.636Z] Time:          Mon Feb 08 2021 22:41:25 GMT-0500 (Eastern Standard Time)
+[debug] [2021-02-09T03:41:25.636Z] ----------------------------------------------------------------------
+[debug] [2021-02-09T03:41:25.636Z] 
+[debug] [2021-02-09T03:41:25.641Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-02-09T03:41:25.642Z] > authorizing via signed-in user
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\arman\SPARKDEV\Rails\rails
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2021-02-09T03:41:36.691Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=100
+[debug] [2021-02-09T03:41:37.024Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
+[debug] [2021-02-09T03:41:37.024Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[info] i  Using project rails-304100 (Rails) 
+[info] 
+=== Hosting Setup
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 
+[debug] [2021-02-09T03:41:55.742Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/releases.json [none]
+[debug] [2021-02-09T03:41:55.838Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/releases.json 200
+[debug] [2021-02-09T03:41:55.838Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/releases.json {"current":{"version":"8.2.6","browserURL":"https://www.gstatic.com/firebasejs/8.2.6/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/8.2.6/firebase.tgz"},"live":{"version":"8.2","browserURL":"https://www.gstatic.com/firebasejs/live/8.2/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/live/8.2/firebase.tgz"},"components":{"analytics":"https://www.gstatic.com/firebasejs/8.2.6/firebase-analytics.js","app":"https://www.gstatic.com/firebasejs/8.2.6/firebase-app.js","auth":"https://www.gstatic.com/firebasejs/8.2.6/firebase-auth.js","database":"https://www.gstatic.com/firebasejs/8.2.6/firebase-database.js","firestore":"https://www.gstatic.com/firebasejs/8.2.6/firebase-firestore.js","functions":"https://www.gstatic.com/firebasejs/8.2.6/firebase-functions.js","installations":"https://www.gstatic.com/firebasejs/8.2.6/firebase-installations.js","messaging":"https://www.gstatic.com/firebasejs/8.2.6/firebase-messaging.js","storage":"https://www.gstatic.com/firebasejs/8.2.6/firebase-storage.js","performance":"https://www.gstatic.com/firebasejs/8.2.6/firebase-performance.js","remote-config":"https://www.gstatic.com/firebasejs/8.2.6/firebase-remote-config.js","firestore.memory":"https://www.gstatic.com/firebasejs/8.2.6/firebase-firestore.memory.js"}}
+[info] i  Skipping write of public/index.html 
+[info] 
+[info] i  Detected a .git folder at C:\Users\arman\SPARKDEV\Rails\rails 
+[info] i  Authorizing with GitHub to upload your service account to a GitHub repository's secrets store. 
+[info] 
+[info] Visit this URL on this device to log in:
+[info] https://github.com/login/oauth/authorize?client_id=89cf50f02ac6aaed3484&state=614204402&redirect_uri=http%3A%2F%2Flocalhost%3A9005&scope=read%3Auser%20repo%20public_repo
+[info] 
+[info] Waiting for authentication...
+[debug] [2021-02-09T03:42:26.438Z] >>> HTTP REQUEST POST https://github.com/login/oauth/access_token  
+ {"client_id":"89cf50f02ac6aaed3484","client_secret":"3330d14abc895d9a74d5f17cd7a00711fa2c5bf0","code":"7b2a7108f9beccbb473d","redirect_uri":"http://localhost:9005","state":"614204402"}
+[debug] [2021-02-09T03:42:26.689Z] <<< HTTP RESPONSE 200 {"server":"GitHub.com","date":"Tue, 09 Feb 2021 03:42:22 GMT","content-type":"application/json; charset=utf-8","transfer-encoding":"chunked","vary":"X-PJAX, Accept-Encoding, Accept, X-Requested-With","etag":"W/\"615e6a30972374919d933baaaccee601\"","cache-control":"max-age=0, private, must-revalidate","strict-transport-security":"max-age=31536000; includeSubdomains; preload","x-frame-options":"deny","x-content-type-options":"nosniff","x-xss-protection":"1; mode=block","referrer-policy":"origin-when-cross-origin, strict-origin-when-cross-origin","expect-ct":"max-age=2592000, report-uri=\"https://api.github.com/_private/browser/errors\"","content-security-policy":"default-src 'none'; base-uri 'self'; block-all-mixed-content; connect-src 'self' uploads.github.com www.githubstatus.com collector.githubapp.com api.github.com github-cloud.s3.amazonaws.com github-production-repository-file-5c1aeb.s3.amazonaws.com github-production-upload-manifest-file-7fdce7.s3.amazonaws.com github-production-user-asset-6210df.s3.amazonaws.com cdn.optimizely.com logx.optimizely.com/v1/events wss://alive.github.com; font-src github.githubassets.com; form-action 'self' github.com gist.github.com; frame-ancestors 'none'; frame-src render.githubusercontent.com; img-src 'self' data: github.githubassets.com identicons.github.com collector.githubapp.com github-cloud.s3.amazonaws.com *.githubusercontent.com; manifest-src 'self'; media-src 'none'; script-src github.githubassets.com; style-src 'unsafe-inline' github.githubassets.com; worker-src github.com/socket-worker-5029ae85.js gist.github.com/socket-worker-5029ae85.js","x-github-request-id":"8ED9:0AAE:F1F82:14DA09:6022049E"}
+[debug] [2021-02-09T03:42:26.689Z] >>> [apiv2][query] GET https://api.github.com/user [none]
+[debug] [2021-02-09T03:42:26.900Z] <<< [apiv2][status] GET https://api.github.com/user 200
+[debug] [2021-02-09T03:42:26.900Z] <<< [apiv2][body] GET https://api.github.com/user {"login":"ArmaniL","id":35434507,"node_id":"MDQ6VXNlcjM1NDM0NTA3","avatar_url":"https://avatars.githubusercontent.com/u/35434507?v=4","gravatar_id":"","url":"https://api.github.com/users/ArmaniL","html_url":"https://github.com/ArmaniL","followers_url":"https://api.github.com/users/ArmaniL/followers","following_url":"https://api.github.com/users/ArmaniL/following{/other_user}","gists_url":"https://api.github.com/users/ArmaniL/gists{/gist_id}","starred_url":"https://api.github.com/users/ArmaniL/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/ArmaniL/subscriptions","organizations_url":"https://api.github.com/users/ArmaniL/orgs","repos_url":"https://api.github.com/users/ArmaniL/repos","events_url":"https://api.github.com/users/ArmaniL/events{/privacy}","received_events_url":"https://api.github.com/users/ArmaniL/received_events","type":"User","site_admin":false,"name":null,"company":null,"blog":"","location":null,"email":null,"hireable":null,"bio":null,"twitter_username":null,"public_repos":18,"public_gists":0,"followers":1,"following":1,"created_at":"2018-01-14T21:35:36Z","updated_at":"2021-02-09T03:42:21Z","private_gists":0,"total_private_repos":0,"owned_private_repos":0,"disk_usage":12476,"collaborators":0,"two_factor_authentication":false,"plan":{"name":"free","space":976562499,"collaborators":0,"private_repos":10000}}
+[info] 
+[info] +  Success! Logged into GitHub as ArmaniL 
+[info] 
+[debug] [2021-02-09T03:43:00.178Z] >>> [apiv2][query] GET https://api.github.com/repos/armanil/Rails/actions/secrets/public-key type=owner
+[debug] [2021-02-09T03:43:00.373Z] <<< [apiv2][status] GET https://api.github.com/repos/armanil/Rails/actions/secrets/public-key 404
+[debug] [2021-02-09T03:43:00.373Z] <<< [apiv2][body] GET https://api.github.com/repos/armanil/Rails/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest/reference/actions#get-a-repository-public-key"}
+[debug] [2021-02-09T03:43:02.702Z] >>> [apiv2][query] GET https://api.github.com/repos//actions/secrets/public-key type=owner
+[debug] [2021-02-09T03:43:02.920Z] <<< [apiv2][status] GET https://api.github.com/repos//actions/secrets/public-key 404
+[debug] [2021-02-09T03:43:02.920Z] <<< [apiv2][body] GET https://api.github.com/repos//actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[debug] [2021-02-09T03:43:03.654Z] >>> [apiv2][query] GET https://api.github.com/repos//actions/secrets/public-key type=owner
+[debug] [2021-02-09T03:43:03.786Z] <<< [apiv2][status] GET https://api.github.com/repos//actions/secrets/public-key 404
+[debug] [2021-02-09T03:43:03.786Z] <<< [apiv2][body] GET https://api.github.com/repos//actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[debug] [2021-02-09T03:43:04.435Z] >>> [apiv2][query] GET https://api.github.com/repos//actions/secrets/public-key type=owner
+[debug] [2021-02-09T03:43:04.617Z] <<< [apiv2][status] GET https://api.github.com/repos//actions/secrets/public-key 404
+[debug] [2021-02-09T03:43:04.617Z] <<< [apiv2][body] GET https://api.github.com/repos//actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
