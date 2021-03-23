@@ -35,7 +35,7 @@ function App (){
 
   useEffect(()=>{
     
-    const key="AIzaSyDWTSO8vGyBu3kIOWDFK3iV8ZmTUraqWdI"
+    const key
     const options = {
       enableHighAccuracy: true,
       timeout: 5000,
